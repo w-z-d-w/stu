@@ -1,0 +1,24 @@
+<!--pages/search/index.wxml-->
+<view class="container-search">
+  <view class="search-header">
+    <input type="text" placeholder="请输入搜索关键词" value="{{searchValue}}" bindinput="searchFun" />
+    <view class="search-icon">
+      <image src="../../images/icon/search.svg"></image>
+    </view>
+  </view>
+  <view class="search-list">
+    <image src="../../images/icon/list1.svg"></image>
+  </view>
+</view>
+<view class="search-tabs">
+  <view class="search-list-header">
+    <block wx:for="{{tabs}}" wx:for-item="item" wx:key="index">
+      <text bindtap="filter" data-index="{{index}}" class="{{activeColor === index ? 'active' : ''}}">
+        {{item}}
+      </text>
+    </block>
+  </view>
+  <view class="search-list-cantion">
+
+  </view>
+</view>

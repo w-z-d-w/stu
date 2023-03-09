@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/cart/index",
+    "pages/coupon/index",
+    "pages/fication/index",
+    "pages/mine/index",
+    "pages/search/index",
+    "pages/details/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小飞侠童装",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "van-divider": "@vant/weapp/divider/index",
+    "van-icon": "@vant/weapp/icon/index"
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#ee646e",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "./images/tab/home.png",
+        "selectedIconPath": "./images/tab/home1.png"
+      },
+      {
+        "pagePath": "pages/fication/index",
+        "text": "分类",
+        "iconPath": "./images/tab/fenlei.png",
+        "selectedIconPath": "./images/tab/fenlei1.png"
+      },
+      {
+        "pagePath": "pages/cart/index",
+        "text": "购物车",
+        "iconPath": "./images/tab/cart.png",
+        "selectedIconPath": "./images/tab/cart1.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "./images/tab/wode.png",
+        "selectedIconPath": "./images/tab/wode1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

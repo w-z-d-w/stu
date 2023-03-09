@@ -1,0 +1,56 @@
+<!--pages/details/index.wxml-->
+<view class="swiper1">
+  <swiper indicator-dots indicator-active-color="#fff" autoplay circular interval="3000">
+    <block wx:for="{{swiperList}}" wx:for-item="item" wx:key="*this">
+      <swiper-item>
+        <view class="swiperImg">
+          <image src="{{item.pic}}" mode="widthFix"></image>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="details-title">
+  <view class="goods-title">
+    {{detailsContent.name}}
+  </view>
+  <view class="goods-price">
+    <view class="goods-monery">
+      <view class="present">
+        ￥{{detailsContent.minPrice}}
+      </view>
+      <view class="original">
+        ￥{{detailsContent.originalPrice}}
+      </view>
+      <view class="people">
+        {{detailsContent.numberSells}}人已购买
+      </view>
+    </view>
+    <view class="goods-icon">
+      <button open-type="share" size="mini"></button>
+      <image src="/images/share/share1.png"></image>
+      <image src="/images/share/share2.png"></image>
+    </view>
+  </view>
+</view>
+<view class="details-text">
+  <rich-text class="content" nodes="{{detailText}}"></rich-text>
+</view>
+<view class="tab-bottom">
+  <view class="kefu box">
+    <van-icon name="chat-o" />
+    <view class="name">客服</view> 
+  </view>
+  <view class="cart box">
+    <van-icon name="cart-o" />
+    <view class="name">购物车</view> 
+  </view>
+  <view class="shouc box">
+    <van-icon name="like-o" />
+   <view class="name">收藏</view> 
+  </view>
+  <view class="buttons">
+    <view class="firsh-button">单独购买</view>
+    <view class="last-button">发起拼团</view>
+  </view>
+</view>

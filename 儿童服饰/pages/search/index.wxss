@@ -1,0 +1,58 @@
+/* pages/search/index.wxss */
+.container-search{
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.search-header{
+  margin-left: auto;
+  width: 600rpx;
+  height: 66rpx;
+  display: flex;
+  padding-left: 32rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 50rpx;
+}
+.search-header input{
+  width: 90%;
+  height: 100%;
+}
+.search-header image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.search-list{
+  margin-right: auto;
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+}
+.search-list image{
+  width: 100%;
+  height: 100%;
+}
+
+.search-tabs{
+  margin-top: 20rpx;
+  /* padding: 20rpx 0; */
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid #ccc;
+}
+.search-list-header{
+  display: flex;
+  align-items: center;
+}
+.search-list-header text{
+  flex: 1;
+  text-align: center;
+  color: #000;
+}
+.search-list-header .active{
+  color: #ff0000;
+}

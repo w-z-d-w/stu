@@ -1,0 +1,118 @@
+/* pages/fication/index.wxss */
+.container-search {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.search-header {
+  margin: 0 auto;
+  width: 600rpx;
+  height: 66rpx;
+  display: flex;
+  padding-left: 32rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 50rpx;
+}
+
+.search-header input {
+  width: 90%;
+  height: 100%;
+}
+
+.search-header image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.category-list {
+  width: 100%;
+  display: flex;
+  height: calc(100% - 66rpx);
+}
+
+.scroll-left {
+  flex-shrink: 0;
+  width: 180rpx;
+  height: inherit;
+}
+
+.category-list text {
+  display: block;
+  width: 100%;
+  padding: 30rpx 0rpx;
+  padding-left: 30rpx;
+  text-align: left;
+}
+
+.category-list .active {
+  color: #ff0000;
+  border-left: 4rpx solid #ff0000;
+}
+
+.scroll-right {
+  flex-shrink: 0;
+  width: calc(100vw - 180rpx);
+  height: calc(100vh - 66rpx);
+}
+
+.category-content {
+  width: inherit;
+  height: inherit;
+}
+
+.goods-item {
+  width: 100%;
+  height: 140rpx;
+  margin: 20rpx 0;
+  border-top: 1rpx solid #ccc;
+}
+
+.goods-item navigator {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.item-img {
+  width: 140rpx;
+  height: 140rpx;
+  margin-right: 20rpx;
+}
+
+.item-img image {
+  width: inherit;
+  height: inherit;
+}
+
+.item-details {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  width: 400rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 28rpx;
+  color: #333;
+  font-weight: 600;
+}
+
+.price {
+  color: #ff0000;
+  font-size: 30rpx;
+}
+
+.sold {
+  color: #999;
+  font-size: 24rpx;
+}

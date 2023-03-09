@@ -1,0 +1,44 @@
+<!--pages/fication/index.wxml-->
+<view class="container-search">
+  <view class="search-header">
+    <input type="text" placeholder="请输入搜索关键词" bindinput="searchFun" />
+    <view class="search-icon">
+      <image src="../../images/icon/search.svg"></image>
+    </view>
+  </view>
+</view>
+<view class="category-list">
+  <scroll-view class="scroll-left" scroll-y="true">
+    <block wx:for="{{scrollList}}" wx:key="*this">
+      <text class="{{activeSc == index ? 'active': ''}}" bindtap="activeFun" data-index="{{index}}"
+        data-id="{{item.id}}">{{item.name}}</text>
+    </block>
+  </scroll-view>
+  <scroll-view class="scroll-right" scroll-y="true">
+    <view class="category-content">
+      <block wx:if="{{ goodList.length != 0 }}">
+        <view class="goods-item" wx:for="{{goodList}}" wx:key="*this">
+          <navigator url="../details/index?id={{item.id}}" hover-class="none">
+            <view class="item-img">
+              <image src="{{item.pic}}"></image>
+            </view>
+            <view class="item-details">
+              <view class="title">
+                {{item.name}}
+              </view>
+              <view class="price">
+                ￥{{item.minPrice}}
+              </view>
+              <view class="sold">
+                已售{{item.numberSells}}件
+              </view>
+            </view>
+          </navigator>
+        </view>
+      </block>
+      <block wx:if="{{ goodList.length == 0 }}">
+        <view>暂时没有商品</view>
+      </block>
+    </view>
+  </scroll-view>
+</view>
